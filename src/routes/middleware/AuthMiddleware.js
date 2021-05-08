@@ -1,12 +1,15 @@
 import React from 'react'
 
 const AuthMiddleware = ({
-    layout : Layout,
+    layout: Layout,
     component: Component
 }) => {
 
     return (
-        <Component/>
+        <Layout>
+            <Component />
+        </Layout>
+
     )
 }
 

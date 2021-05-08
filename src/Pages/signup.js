@@ -2,7 +2,7 @@ import React from 'react'
 
 const Signup = () => {
     return (
-        <div className="auth-pages-cover">
+        <div className="auth-pages-cover container-fluid text-center">
             <h1>Signup</h1>
         </div>
     )
