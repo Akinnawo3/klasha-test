@@ -1,3 +1,4 @@
+import Dashboard from "../Pages/Dashboard";
 import Login from "../Pages/login";
 import Signup from "../Pages/signup";
 
@@ -6,7 +7,6 @@ export const authRoutes = [
     { path: "/signup", component: Signup },
 ]
 export const userRoutes = [
-    { path: "/login", component: Login },
-    { path: "/login", component: Signup },
+    { path: "/", component: Dashboard }
 ]
 

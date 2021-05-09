@@ -24,7 +24,6 @@ const Login = (props) => {
                                         handleValidSubmit(e, v)
                                     }}
                                 >
-                                    {props.error && typeof props.error === "string" ? alert(props.error) : null}
 
                                     <div className="mb-4 ">
                                         <AvField
@@ -36,15 +35,15 @@ const Login = (props) => {
                                         />
                                     </div>
 
-                                   
-                                        <AvField
-                                            name="Password"
-                                            className="form-control mb-3 "
-                                            type="password"
-                                            placeholder="Enter Password"
-                                            required
-                                        />
-                                 
+
+                                    <AvField
+                                        name="Password"
+                                        className="form-control mb-3 "
+                                        type="password"
+                                        placeholder="Enter Password"
+                                        required
+                                    />
+
 
                                     <div className="d-flex justify-content-between">
                                         <div className="form-check">

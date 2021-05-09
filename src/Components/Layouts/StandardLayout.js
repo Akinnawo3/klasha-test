@@ -1,10 +1,11 @@
 import React from 'react'
-import mainNav from '../mainNav'
+import MainNav from '../mainNav'
 
 const StandardLayout = ({children}) => {
     return (
         <div>
-            <mainNav/>
+            <MainNav/>
+        
             {children}
         </div>
     )

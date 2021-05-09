@@ -19,7 +19,7 @@ function App() {
                 layout={NonLayout}
               />
             ))}
-          {/* {
+          {
             userRoutes.map((route, idx) =>
               <AuthMiddleware
                 key={idx}
@@ -28,7 +28,7 @@ function App() {
                 layout={StandardLayout}
               />
             )
-          } */}
+          }
 
         </Switch>
       </Router>
