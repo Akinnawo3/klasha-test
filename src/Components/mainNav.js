@@ -12,7 +12,7 @@ const MainNav = () => {
                 </Link>
                 <div className="me-md-5 d-flex" >
                     <img src={pp} height={45} className="d-inline-block align-text-top rounded-circle" />
-                    {/* <div className="text-center d-flex flex-column">
+                    <div className="text-center d-flex flex-column">
                         <div>
                             <b>
                                 Chukwuma Albert Obiazor
@@ -23,7 +23,7 @@ const MainNav = () => {
                                 Snr. Software Developer
                             </b>
                         </small>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </nav>
