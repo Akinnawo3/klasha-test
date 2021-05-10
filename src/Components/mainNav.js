@@ -7,12 +7,12 @@ const MainNav = () => {
     return (
         <nav className="navbar navbar-light bg-white">
             <div className="container-fluid d-flex">
-                <Link className="navbar-brand ms-4 " to="/">
+                <Link className="navbar-brand ms-md-4 " to="/">
                     <img src={logo} height={35} className="d-inline-block align-text-top" />
                 </Link>
-                <div className="me-5 d-flex" >
+                <div className="me-md-5 d-flex" >
                     <img src={pp} height={45} className="d-inline-block align-text-top rounded-circle" />
-                    <div className="text-center d-flex flex-column">
+                    {/* <div className="text-center d-flex flex-column">
                         <div>
                             <b>
                                 Chukwuma Albert Obiazor
@@ -23,7 +23,7 @@ const MainNav = () => {
                                 Snr. Software Developer
                             </b>
                         </small>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>
