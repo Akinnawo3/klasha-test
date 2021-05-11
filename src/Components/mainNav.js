@@ -5,7 +5,7 @@ import pp from '../assets/img/user-profile-pic.jpeg'
 
 const MainNav = () => {
     return (
-        <nav className="navbar navbar-light bg-white">
+        <nav className="navbar navbar-light bg-white ">
             <div className="container-fluid d-flex">
                 <Link className="navbar-brand ms-md-4 " to="/">
                     <img src={logo} height={35} className="d-inline-block align-text-top" />
