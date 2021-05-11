@@ -10,7 +10,9 @@ const SideBar = () => {
             <div className="aside-menu">
                 <div className="user-avatar">
                     <img src={pp} height={85} className="d-inline-block align-text-top rounded-circle" />
-                     
+                    <div>
+                    <Fa
+                    </div>
                 </div>
                 <div className="menu-items">
                     <ul>
