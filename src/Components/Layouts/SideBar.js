@@ -9,14 +9,17 @@ const SideBar = () => {
         <div className="vh-100 bg-white aside">
             <div className="aside-menu">
                 <div className="user-avatar">
-                    <img src={pp} height={75} className="d-inline-block align-text-top rounded-circle" />
+                    <img src={pp} height={85} className="d-inline-block align-text-top rounded-circle" />
+                     
                 </div>
                 <div className="menu-items">
                     <ul>
                         {
                             menuItems.map(
                                 item => <li>
-                                    {item}
+                                    <div className="menu-item">
+                                        {item}
+                                    </div>
                                 </li>
                             )
                         }
