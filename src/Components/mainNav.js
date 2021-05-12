@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBell, FaChevronCircleDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import logo from '../assets/img/logo.jpeg'
 import pp from '../assets/img/user-profile-pic.jpeg'
@@ -23,6 +24,12 @@ const MainNav = () => {
                                 Snr. Software Developer
                             </b>
                         </small>
+                    </div>
+                    <div className="mx-2">
+                        <FaChevronCircleDown size={40} color={"rgb(159, 0, 0)"} className="text-muted"/>
+                    </div>
+                    <div className="ms-2">
+                        <FaBell size={40} color={"rgb(159, 0, 0)"}/>
                     </div>
                 </div>
             </div>

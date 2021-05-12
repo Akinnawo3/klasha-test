@@ -26,15 +26,15 @@ const SideBar = () => {
                         {
                             menuItems.map(
                                 item =>
-                                    <li>
-                                        <NavLink to={item.linkTo} className="text-decoration-none text-dark">
+                                    <NavLink exact to={item.linkTo} className="text-decoration-none text-dark">
+                                        <li>
 
                                             <div className="menu-item ">
                                                 {item.title}
                                             </div>
-                                        </NavLink>
+                                        </li>
+                                    </NavLink>
 
-                                    </li>
                             )
                         }
 
