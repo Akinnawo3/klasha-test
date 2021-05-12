@@ -1,4 +1,5 @@
 import React from 'react'
+import PagesTitle from './pagesTitle'
 
 const Profile = () => {
     return (

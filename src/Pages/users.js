@@ -3,6 +3,9 @@ import PagesTitle from './pagesTitle'
 import '../assets/scss/pages.scss'
 
 const Users = () => {
+    const users = [
+        {name: "chukwuma Obiazor", location : "General 1"}
+    ]
     return (
         <div className="container mt-4 mx-5 bg-white p-0">
             <PagesTitle title={"Users"} />

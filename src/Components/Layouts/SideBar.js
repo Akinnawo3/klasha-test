@@ -2,13 +2,14 @@ import React from 'react'
 import '../../assets/scss/aside.scss'
 import pp from '../../assets/img/user-profile-pic.jpeg'
 import { FaCamera } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
     const menuItems = [
-        { title: "Profile", linkTo: "" },
-        { title: "Dashboard", linkTo: "" },
-        { title: "Assets", linkTo: "" },
-        { title: "Users", linkTo: "" },
+        { title: "Profile", linkTo: "/profile" },
+        { title: "Dashboard", linkTo: "/" },
+        { title: "Assets", linkTo: "/assets" },
+        { title: "Users", linkTo: "/users" },
     ]
 
     return (
@@ -24,11 +25,16 @@ const SideBar = () => {
                     <ul>
                         {
                             menuItems.map(
-                                item => <li>
-                                    <div className="menu-item">
-                                        {item.title}
-                                    </div>
-                                </li>
+                                item =>
+                                    <li>
+                                        <NavLink to={item.linkTo} className="text-decoration-none text-dark">
+
+                                            <div className="menu-item ">
+                                                {item.title}
+                                            </div>
+                                        </NavLink>
+
+                                    </li>
                             )
                         }
 
