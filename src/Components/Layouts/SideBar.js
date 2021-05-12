@@ -1,10 +1,15 @@
 import React from 'react'
 import '../../assets/scss/aside.scss'
 import pp from '../../assets/img/user-profile-pic.jpeg'
-import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart, FaWarehouse, FaSuitcase, FaCamera } from 'react-icons/fa';
+import { FaCamera } from 'react-icons/fa';
 
 const SideBar = () => {
-    const menuItems = ["Profile", "Dashboard", "Assets", "Users"]
+    const menuItems = [
+        { title: "Profile", linkTo: "" },
+        { title: "Dashboard", linkTo: "" },
+        { title: "Assets", linkTo: "" },
+        { title: "Users", linkTo: "" },
+    ]
 
     return (
         <div className="vh-100 bg-white aside">
@@ -21,7 +26,7 @@ const SideBar = () => {
                             menuItems.map(
                                 item => <li>
                                     <div className="menu-item">
-                                        {item}
+                                        {item.title}
                                     </div>
                                 </li>
                             )

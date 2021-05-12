@@ -23,7 +23,7 @@ function App() {
             userRoutes.map((route, idx) =>
               <AuthMiddleware
                 key={idx}
-                path={route.path}
+                exact path={route.path}
                 component={route.component}
                 layout={StandardLayout}
               />
