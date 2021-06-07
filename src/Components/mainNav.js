@@ -1,43 +1,32 @@
 import React from 'react'
-import { FaBell, FaChevronCircleDown } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import logo from '../assets/img/logo.jpeg'
-import pp from '../assets/img/user-profile-pic.jpeg'
+import moment from 'moment'
+import { FaBars, FaBell, FaCircle, FaDotCircle } from 'react-icons/fa'
+import "../assets/scss/mainNav.scss"
+import userImage from '../assets/img/user-profile-pic.jpeg'
 
-const MainNav = () => {
+
+
+
+
+const MainNav = ({ pageTitle }) => {
     return (
-        <nav className="navbar navbar-light bg-white ">
-            <div className="container-fluid d-flex">
-                <Link className="navbar-brand ms-md-4 " to="/">
-                    <img src={logo} height={35} className="d-inline-block align-text-top" />
-                </Link>
-                <div className="me-md-5 d-flex" >
-                    <img src={pp} height={45} className="d-inline-block align-text-top rounded-circle" />
-                    <div className="text-center d-flex flex-column">
-                        <div>
-                            <b>
-                                Chukwuma Albert Obiazor
-                            </b>
-                        </div>
-                        <small>
-                            <b>
-                                Snr. Software Developer
-                            </b>
-                        </small>
-                    </div>
-                    <div className="mx-2">
-                        <FaChevronCircleDown size={40} color={"rgb(159, 0, 0)"} className="text-muted"/>
-                    </div>
-                    <div className="ms-2">
-                        <FaBell size={40} color={"rgb(159, 0, 0)"}/>
-                    </div>
+        <div className="mt-2 d-flex justify-content-between align-items-center mb-5">
+            <div className="d-flex">
+                <div className="me-2 d-md-none side-switch"><FaBars /></div>
+                <div className="left-side d-flex flex-column ">
+                    <span className="fw-bold"> {pageTitle}</span>
+                    <small className="text-muted ">Today, {moment().format("MMM Do YY")}</small>
                 </div>
             </div>
-        </nav>
-
-
+            <div className="right-side pe-2 d-flex">
+                <span className="border rounded-circle p-2 bg-light notification-border">
+                    <div className=" text-danger blinker"><FaCircle size={10} /></div>
+                    <FaBell style={{ color: "grey", fontSize: "1.5em" }} />
+                </span>
+                <img src={userImage} height="45" className=" rounded-circle border rounded-circle  border-danger bg-warning ms-3" />
+            </div>
+        </div>
 
     )
 }
-
 export default MainNav

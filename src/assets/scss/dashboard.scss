@@ -1,0 +1,28 @@
+td {
+    white-space: nowrap;
+}
+
+.input {
+    width: 30%;
+}
+
+.outer-border {
+    width: 60%;
+    .iner-items {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .table-searches {
+        flex-direction: column;
+    }
+
+    .outer-border {
+        width: 75% !important;
+        flex-direction: column;
+        .iner-items {
+            width: 100% !important;
+        }
+    }
+}

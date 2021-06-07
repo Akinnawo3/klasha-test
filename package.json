@@ -1,5 +1,5 @@
 {
-  "name": "hansob-project",
+  "name": "klashacls-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "availity-reactstrap-validation": "^2.7.1",
     "bootstrap": "^5.0.0",
+    "moment": "^2.29.1",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

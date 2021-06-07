@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import NonLayout from "./Components/Layouts/NonLayout";
-import StandardLayout from "./Components/Layouts/StandardLayout";
+import NonLayout from "./Layouts/NoLayout";
+import StandardLayout from "./Layouts/StandardLayout";
 import { authRoutes, userRoutes } from "./routes/allRoutes";
 import AuthMiddleware from "./routes/middleware/AuthMiddleware";
 
