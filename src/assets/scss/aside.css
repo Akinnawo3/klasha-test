@@ -1,0 +1,51 @@
+.aside {
+  width: 250px;
+  border-top: 1px solid black;
+}
+
+.aside-menu {
+  margin: 70px 25px 0;
+  text-align: center;
+}
+
+.aside-menu .user-avatar {
+  position: relative;
+}
+
+.aside-menu .user-avatar .avatar-cam {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+
+.menu-items {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.menu-items ul {
+  padding: 0.6em;
+}
+
+.menu-items ul li {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.menu-items ul li .menu-item {
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+  background-color: #d1cece;
+  -webkit-box-shadow: 2px 4px 5px #8a8d8d;
+          box-shadow: 2px 4px 5px #8a8d8d;
+}
+
+.active li .menu-item {
+  background-color: #b95252 !important;
+}
+/*# sourceMappingURL=aside.css.map */

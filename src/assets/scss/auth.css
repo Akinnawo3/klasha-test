@@ -1,0 +1,11 @@
+.auth-pages-cover {
+  background-image: url("../../assets/img/background.jpeg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-bg {
+  background: #d1cece;
+}
+/*# sourceMappingURL=auth.css.map */
