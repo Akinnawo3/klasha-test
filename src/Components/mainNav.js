@@ -15,13 +15,16 @@ const MainNav = ({ pageTitle }) => {
             document.querySelector("div.aside").classList.add("expanded");
         }
         sideSwitchRef?.current.addEventListener("click", listener);
-        const sRef = sideSwitchRef.current;
-        return () => sRef.removeEventListener('click',listener)
+        // l[[dodffca]]
+        // const sRef = sideSwitchRef.current;
+        // return () => sRef.removeEventListener('click',listener)
     }, [])
     return (
         <div className="mt-2 d-flex justify-content-between align-items-center mb-5">
             <div className="d-flex">
-                <div ref={sideSwitchRef} className="me-2 d-md-none side-switch"><FaBars /></div>
+                <div 
+                ref={sideSwitchRef} 
+                className="me-2 d-md-none side-switch"><FaBars /></div>
                 <div className="left-side d-flex flex-column ">
                     <span className="fw-bold"> {pageTitle}</span>
                     <small className="text-muted ">Today, {moment().format("MMM Do YY")}</small>

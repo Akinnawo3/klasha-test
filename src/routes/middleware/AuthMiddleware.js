@@ -5,6 +5,7 @@ const AuthMiddleware = ({
     component: Component
 }) => {
 
+
     return (
         <Layout>
             <Component />

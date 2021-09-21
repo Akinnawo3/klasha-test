@@ -6,6 +6,7 @@ import AuthMiddleware from "./routes/middleware/AuthMiddleware";
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
